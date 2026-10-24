@@ -1,0 +1,35 @@
+name: Publish 成人百科夜读入口 to GitHub Pages
+
+# Run only after the local preview has been reviewed and approved.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: github-pages-chengrenbaike-night-guide
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+      - name: Verify the site entry page
+        run: test -s sites/duanju-guide/public/index.html
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+      - name: Upload site files
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: sites/duanju-guide/public
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

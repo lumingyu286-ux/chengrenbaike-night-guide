@@ -1,0 +1,2 @@
+slug,project,site_name,site_type,platform,repository,preview_url,live_url,status,created_at,published_at,notes
+duanju-guide,chengrenbaike.com,成人百科 · 夜读入口,三页成人话题海报导览,Cloudflare Pages/Workers; GitHub Pages; GitLab Pages; Google Sites,,http://127.0.0.1:4173/,,新版预览待用户确认,2026-10-24,,首页/主题海报/夜读指南；八张原创主题海报；所有外部入口指向主站首页；未发布

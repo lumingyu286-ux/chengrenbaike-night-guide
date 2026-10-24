@@ -1,0 +1,12 @@
+# Run this Pages job manually after the site preview has been approved.
+deploy_chengrenbaike_night_guide_pages:
+  image: alpine:3.20
+  stage: deploy
+  script:
+    - test -s sites/duanju-guide/public/index.html
+  pages:
+    publish: sites/duanju-guide/public
+  rules:
+    - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
+      when: manual
+    - when: never
