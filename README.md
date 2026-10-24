@@ -10,7 +10,7 @@
 4. 把成品预览交给用户看；根据反馈修改，并在用户确认后上传发布。
 5. 检查正式网址可以打开，登记平台、仓库、预览、正式网址和日期到 [`sites.csv`](sites.csv)。
 
-首个站点已建立在 [`sites/duanju-guide/`](sites/duanju-guide/)：**成人百科 · 夜读入口**，三页原创成人话题与海报导览，包含首页、主题海报和夜读指南。页面用亲密关系、边界与自我探索的主题灵感引导成年访客访问 [chengrenbaike.com](https://chengrenbaike.com/)；海报不代表目标站的具体内容。源码、设计说明、需求副本及四个平台的发布准备位于同一站点目录。当前仅提供本地预览，尚未上传；用户确认后再按 [`PUBLISH.md`](sites/duanju-guide/PUBLISH.md) 发布并登记正式网址。
+首个站点已建立在 [`sites/duanju-guide/`](sites/duanju-guide/)：**成人百科 · 夜读入口**，三页原创成人话题与海报导览，包含首页、主题海报和夜读指南。页面用亲密关系、边界与自我探索的主题灵感引导成年访客访问 [chengrenbaike.com](https://chengrenbaike.com/)；海报不代表目标站的具体内容。Cloudflare Pages、GitHub Pages、Google Sites 已发布；GitLab 公开仓库已导入，Pages 流水线仍需账号身份验证。实际网址与状态记录在 [`sites.csv`](sites.csv)，更新流程见 [`PUBLISH.md`](sites/duanju-guide/PUBLISH.md)。
 
 ## 在 Codex 中使用
 

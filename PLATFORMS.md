@@ -4,9 +4,9 @@
 
 | 平台 | 当前已核实的状态 | 发布前待办 |
 | --- | --- | --- |
-| GitHub | 当前聊天可通过已连接的 GitHub 工具读取账号 `lumingyu286-ux`；核验时该账号尚无仓库。 | 为具体站点创建仓库并设置 GitHub Pages。 |
-| Cloudflare Pages / Workers | 浏览器中已登录 Cloudflare；其 GitHub App 已安装且可访问该账号的全部仓库。上次查看时账号没有可导入的仓库。 | 新站确定后创建仓库，再连接 Pages Git 自动部署；或使用有权限的 Cloudflare 插件 / CLI。 |
-| GitLab Pages | 尚未核实账号连接。 | 按需连接 GitLab，确认仓库与 Pages 流水线权限。 |
-| Google Sites | 尚未核实账号连接。 | 按需确认 Google 账号与网站编辑 / 发布权限。 |
+| GitHub | `lumingyu286-ux/chengrenbaike-night-guide` 已公开，GitHub Pages 已发布并核验。 | 后续内容更新须重新运行 Pages 工作流。 |
+| Cloudflare Pages / Workers | Cloudflare Pages 项目 `chengrenbaike-night-guide` 已发布并核验；本站为纯静态内容。 | 后续更新按项目的部署方式重新发布。 |
+| GitLab Pages | `lumingyu286/chengrenbaike-night-guide` 已从公开 GitHub 仓库导入，项目公开；GitLab 要求先完成账号身份验证，尚无法运行 CI 流水线。 | 账号持有人完成 GitLab 验证后，在 `main` 上启动流水线与手动作业，再核验 Pages 地址。 |
+| Google Sites | `chengrenbaike-night-guide` 已使用原生页面编辑器发布并核验，含首页、主题海报、夜读指南与可见主站外链。 | 内容修改后在编辑器中重新发布。 |
 
-Cloudflare 本地 Wrangler 的设备授权曾被 Cloudflare 安全检查拦截；这不影响先用 Git 仓库接入 Pages 的方案。不要把浏览器登录误认为 CLI 已授权。
+已发布的网址见 [`sites.csv`](sites.csv)。不要把浏览器登录误认为 CLI 已授权。
