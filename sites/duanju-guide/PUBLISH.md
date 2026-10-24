@@ -2,6 +2,8 @@
 
 静态站文件在 `public/`；发布目录的根文件是非空的 `public/index.html`。本站是三页原创成人话题与海报导览：**首页、主题海报、夜读指南**。首页标题为「成人百科入口｜成年人的夜间探索指南」，描述为「从亲密关系、成人话题与夜间灵感出发，浏览原创主题海报，点击前往成人百科 chengrenbaike.com 探索更多。本站为独立导览。」用户确认预览后，Cloudflare Pages、GitHub Pages 和 Google Sites 已发布；GitLab 公开仓库已导入，用户决定暂时跳过 GitLab Pages 发布。若日后恢复，需先完成 GitLab 账号身份验证。正式网址和当前状态见项目根目录的 `sites.csv`。
 
+Cloudflare Pages 首选项目为 `crbk`，正式地址为 `https://crbk.pages.dev/`，使用 Direct Upload 发布 `public/`。原项目 `chengrenbaike-night-guide` 及其地址保留。新地址已核验首页、两个内页、手机布局、图片与指向主站的链接。两个项目互相独立；更新本站内容时，需分别重新上传至两个项目。
+
 站内页面与资源链接使用相对路径，并在正式网址核验多页导航、手机布局及指向 `https://chengrenbaike.com/` 的可见链接。新建项目或独立仓库时建议使用 `chengrenbaike-night-guide` 作为公开地址代号（以平台实际可用名称为准）；Cloudflare Workers 配置已采用该名称。GitHub 项目站可能位于 `/仓库名/` 子路径；GitLab Pages 也可能使用项目子路径或独立域名。
 
 ## Cloudflare Pages（Git 集成）
